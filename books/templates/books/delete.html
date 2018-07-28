@@ -3,8 +3,11 @@
 {% block content %}
 
 <h1>DELETE BOOK</h1>
-<p>Are you sure you want to delete {{ object }}?</p>
+<p>Are You Sure You Want To Delete {{ object }}?</p>
+<form method="POST">
+    {% csrf_token %}
+        <button class="btn btn-danger">Delete</button>
+        <a href="{% url 'books:index' %}" class="btn btn-outline-secondary" role="button">Cancel</a>
+</form>
 
-<a href="{% url 'books:index' %}" class="btn btn-danger" role="button">Delete</a>
-<a href="{% url 'books:index' %}" class="btn btn-primary" role="button">Cancel</a>
 {% endblock %}

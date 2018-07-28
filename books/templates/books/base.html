@@ -6,8 +6,6 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="{% static 'books/style.css' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,7 +26,7 @@
                         <a class="nav-link" href="{% url 'books:book-add' %}"><i class="fa fa-plus-circle"></i> Add Book</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'books:index' %}"><i class="fa fa-sign-out"></i> Logout</a>
+                        <a class="nav-link" href="{% url 'books:index' %}"><i class="fa fa-download"></i> Downloads</a>
                     </li>
                 </ul>
                 </div>
