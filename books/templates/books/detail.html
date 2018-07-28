@@ -1,0 +1,23 @@
+{% extends 'books/base.html' %}
+
+{% block body %}
+
+
+<div class="col-lg-9 col-md-4 col-sm-6">
+    <div class="thumbnail">
+        <p></p>
+        <img src="{{book.book_image}}" alt="Generic placeholder thumbnail" height="250" width="150">
+
+        <div class="caption">
+        <h3><b>{{book.name}}</b></h3>
+        <p><b>Author : </b>{{book.author}}</p>
+        <p><b>Price : </b>Rs.{{book.price}}</p>
+        <p><b>Category : </b>{{book.type}}</p>
+
+        <a href="#" class="btn btn-danger" role="button">
+            <i class="fa fa-download"> DOWNLOAD</i>
+        </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

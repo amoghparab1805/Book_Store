@@ -1,0 +1,10 @@
+{% extends 'books/base_del.html' %}
+
+{% block content %}
+
+<h1>DELETE BOOK</h1>
+<p>Are you sure you want to delete {{ object }}?</p>
+
+<a href="{% url 'books:index' %}" class="btn btn-danger" role="button">Delete</a>
+<a href="{% url 'books:index' %}" class="btn btn-primary" role="button">Cancel</a>
+{% endblock %}
