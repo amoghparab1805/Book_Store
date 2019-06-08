@@ -1,2 +1,2 @@
-# NewSite
-## First django app
+# Book Store
+Django Tutorial.
